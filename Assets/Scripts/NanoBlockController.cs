@@ -16,6 +16,6 @@ public class NanoBlockController : MonoBehaviour
         if(Physics.Raycast(transform.position,Vector3.up, 1f)){
             buildable = false;
         }
-         r.material.color = Color.white;
+         r.material.SetColor("_BaseColor",Color.white);
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class MainFrameController : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other) {
-        GameManager.MainFrameHealth--;
+        GameManager.i.MainFrameHealth -= other.GetComponent<Damager>().damage;
+        GameManager.i.ActiveViruses.Remove(other.gameObject);
         Destroy(other.gameObject);
     }
 }

@@ -6,8 +6,16 @@ TagManager:
   tags:
   - Target_A
   - Target_B
-  - Start
   - End
+  - Virus
+  - Byte
+  - FAT
+  - TrojanHorse
+  - Polymorphic
+  - Overwrite
+  - StartA
+  - StartB
+  - Start
   layers:
   - Default
   - TransparentFX
@@ -17,8 +25,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Viruses
+  - PostProcessing
   - 
   - 
   - 

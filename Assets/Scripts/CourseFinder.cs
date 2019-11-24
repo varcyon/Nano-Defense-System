@@ -15,7 +15,7 @@ public class CourseFinder : MonoBehaviour
     void Start()
     {
         virus = GetComponent<NavMeshAgent>();
-        virus.SetDestination(GameManager.Finish.transform.position);
+        virus.SetDestination(GameManager.i.Finish.transform.position);
         foreach (GameObject target in GameObject.FindGameObjectsWithTag("Target_A"))
         {
             destinations_A.Add(target);
@@ -41,7 +41,7 @@ public class CourseFinder : MonoBehaviour
         course.Add(destinations_A[A]);
         int B = Random.Range(0, destinations_B.Count);
         course.Add(destinations_B[B]);
-        course.Add(GameManager.Finish);
+        course.Add(GameManager.i.Finish);
     }
 
     void NextDestination()
