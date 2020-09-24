@@ -1,0 +1,122 @@
+Base path: 'F:/2019.2.12f1/Editor/Data', plugins path 'F:/2019.2.12f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=19040 outsize=8048 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=114235 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=31663 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=56142 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=67647 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26390 outsize=15917 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5910 outsize=5733 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at FXAA.compute(10): syntax error: unexpected string constant
+  api=9 insize=1067 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=9 insize=1372 outsize=1488 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1176 outsize=772 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9590 outsize=9146 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11807 outsize=9783 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at GTAODenoise.compute(12): syntax error: unexpected string constant
+  api=9 insize=9730 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=4855 outsize=5412 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5067 outsize=2708 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3328 outsize=2371 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=12177 outsize=2662 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7611 outsize=6491 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3154 outsize=1991 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13984 outsize=2094 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=8653 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=10507 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at GTAOUpsample.compute(5): syntax error: unexpected string constant
+  api=9 insize=2741 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=22088 outsize=14767 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at GTAO.compute(148): syntax error: unexpected string constant
+  api=9 insize=7702 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=9 insize=1957 outsize=1537 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8884 outsize=4857 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3012 outsize=1860 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at NaNKiller.compute(7): syntax error: unexpected string constant
+  api=9 insize=661 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=3111 outsize=2047 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3072 outsize=1324 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1806 outsize=561 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8163 outsize=532 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=36696 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=36696 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5626 outsize=2406 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5190 outsize=1808 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at (7): #error "RWTexture2DArray" is not supported on GLES 3.0
+  error: 2 plat 9 at (8): #error "RWTexture2D" is not supported on GLES 3.0
+  api=9 insize=848 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=9203 outsize=4890 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=10127 outsize=8353 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=4045 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7903 outsize=4491 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at RaytracingShadowFilter.compute(35): syntax error: unexpected string constant
+  api=9 insize=18083 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=18083 outsize=668 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5893 outsize=5009 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=20136 outsize=14761 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=5449 outsize=4490 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4952 outsize=1691 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=7122 outsize=3058 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1067 outsize=3163 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1372 outsize=620 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11565 outsize=5613 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4562 outsize=2453 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3831 outsize=3082 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=2460 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18083 outsize=5562 ok=1

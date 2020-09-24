@@ -54,15 +54,25 @@ MonoBehaviour:
   Finish: {fileID: 0}
   MainFrameHealth: 0
   ActiveViruses: []
-  MaxMainFrameHealth: 64
+  NormalBlock: {fileID: 2100000, guid: fcbedb4b3e39d224ba0f70abd58dfddc, type: 2}
+  HoverMaterial: {fileID: 2100000, guid: 6f6ec23df35db934da2f8738800c77e2, type: 2}
+  MaxMainFrameHealth: 128
   mainframeHealth: {fileID: 0}
   nanoPointsDisplay: {fileID: 0}
-  HoverColor: {r: 0, g: 0.22087526, b: 1, a: 0}
-  nanoPoints: 500
+  HoverColor: {r: 0, g: 0.4745098, b: 1, a: 1}
+  nanoPoints: 150
   nanoPointsRate: 2
   virusPoints: 300
   sectorCleared: {fileID: 0}
   sectorCorrupted: {fileID: 0}
+  subroutineCost: 20
+  nanoInjectorCost: 30
+  nanoBomberCost: 30
+  quarentinerCost: 50
+  virusScannerCost: 50
+  startViruses: 10
+  startVirusesDisplay: {fileID: 0}
+  virusesStart: 0
 --- !u!114 &6227553366021362323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 464368246003948784, guid: eb3726e9c87d9e64589d8677a186ab68, type: 3}
-  spawnRate: 2
+  spawnRate: 0
+  spawnRateMin: 1
+  spawnRateMax: 2
   spawnTimer: 0
   timer: 0
 --- !u!114 &1441347376539859758
@@ -114,7 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 464368246003948784, guid: 90a2c92172ed9ed418521bf773e4fdd1, type: 3}
-  spawnRate: 6
+  spawnRate: 0
+  spawnRateMin: 5
+  spawnRateMax: 6
   spawnTimer: 0
   timer: 0
 --- !u!114 &8218129147875022015
@@ -130,7 +144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 464368246003948784, guid: 78f68183462406c439f65697ae15bfc5, type: 3}
-  spawnRate: 5
+  spawnRate: 0
+  spawnRateMin: 4
+  spawnRateMax: 5
   spawnTimer: 0
   timer: 0
 --- !u!114 &1703851132
@@ -146,7 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 464368246003948784, guid: 8accea981b76bb34bad50da905b2e484, type: 3}
-  spawnRate: 4
+  spawnRate: 0
+  spawnRateMin: 3
+  spawnRateMax: 4
   spawnTimer: 0
   timer: 0
 --- !u!114 &1703851133
@@ -162,6 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virus: {fileID: 464368246003948784, guid: 09c66ebf104ecff44a75e5bdac7e5795, type: 3}
-  spawnRate: 4
+  spawnRate: 0
+  spawnRateMin: 3
+  spawnRateMax: 4
   spawnTimer: 0
   timer: 0

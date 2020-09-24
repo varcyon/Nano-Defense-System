@@ -1,0 +1,105 @@
+Base path: 'F:/2019.2.12f1/Editor/Data', plugins path 'F:/2019.2.12f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=19040 outsize=1491 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=111630 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=14004 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=35435 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=40646 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=47452 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=37860 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=75859 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26390 outsize=15695 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1067 outsize=3163 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2059 outsize=1515 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3798 outsize=3172 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=10429 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9590 outsize=7844 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11807 outsize=9470 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9730 outsize=467 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4855 outsize=4117 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=12177 outsize=2342 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7611 outsize=1033 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13984 outsize=3543 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=8523 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22088 outsize=15086 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7702 outsize=8265 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1957 outsize=3538 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8884 outsize=813 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3116 outsize=2734 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=32909 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=36014 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=17989 outsize=7333 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5190 outsize=1297 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9203 outsize=4890 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1454 outsize=1455 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3133 outsize=551 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=10127 outsize=7446 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7903 outsize=4339 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4037 outsize=885 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3740 outsize=1059 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at RaytracingShadowFilter.compute(35): syntax error: unexpected string constant
+  api=9 insize=18083 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=18083 outsize=635 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5893 outsize=629 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3936 outsize=4285 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2555 outsize=562 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=6677 outsize=5744 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=5555 outsize=4959 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5045 outsize=1723 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5657 outsize=498 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9730 outsize=3340 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1957 outsize=559 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5626 outsize=2406 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=3652 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3740 outsize=1059 ok=1

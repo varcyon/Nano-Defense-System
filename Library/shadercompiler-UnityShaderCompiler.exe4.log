@@ -1,0 +1,115 @@
+Base path: 'F:/2019.2.12f1/Editor/Data', plugins path 'F:/2019.2.12f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=19040 outsize=4959 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=33598 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=62481 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=32335 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=65182 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=93899 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15806 outsize=34092 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26390 outsize=14181 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26390 outsize=16121 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3927 outsize=1744 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at MotionBlur.compute(6): syntax error: unexpected string constant
+  api=9 insize=11565 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=1003 outsize=888 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1176 outsize=800 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10881 outsize=9840 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9590 outsize=7851 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at GTAODenoise.compute(12): syntax error: unexpected string constant
+  api=9 insize=9730 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=9 insize=4855 outsize=8579 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at TemporalAntialiasing.compute(15): syntax error: unexpected string constant
+  api=9 insize=4133 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=5067 outsize=2055 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12177 outsize=1307 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7611 outsize=6586 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3154 outsize=1980 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13984 outsize=4058 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=8518 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=10714 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22088 outsize=14529 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5435 outsize=6437 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8884 outsize=4857 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3111 outsize=3237 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=32395 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=37247 outsize=32395 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=5626 outsize=3129 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5190 outsize=4889 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at (7): #error "RWTexture2DArray" is not supported on GLES 3.0
+  error: 2 plat 9 at (8): #error "RWTexture2D" is not supported on GLES 3.0
+  api=9 insize=848 outsize=0 ok=0
+Cmd: compileComputeKernel
+  api=4 insize=2684 outsize=2268 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9203 outsize=244 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3133 outsize=2697 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2044 outsize=1000 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=10127 outsize=5415 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=4256 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=4225 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7903 outsize=5715 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4037 outsize=2751 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3740 outsize=1426 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18083 outsize=5164 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=20136 outsize=756 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=5079 outsize=4674 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6677 outsize=2238 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=2295 outsize=858 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1372 outsize=678 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9730 outsize=467 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4133 outsize=645 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10127 outsize=4045 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18083 outsize=638 ok=1

@@ -18,7 +18,13 @@ public class AntivirusePlacement : MonoBehaviour
 
     void Update()
     {
-
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            if(placing){
+                Destroy(currentAntivirus);
+                placing = false;
+            } 
+            
+        }
         ///// creates Anti-Virus in the world
         /// Places Subroutine
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -121,7 +127,7 @@ public class AntivirusePlacement : MonoBehaviour
             currentAntivirus.transform.position = pos;
             if (Input.GetMouseButtonDown(1))
             {
-                currentAntivirus.transform.Rotate(0, 90, 0);
+                currentAntivirus.transform.Rotate(0,45, 0);
             }
             if (Input.GetMouseButtonDown(0))
             {
@@ -132,6 +138,7 @@ public class AntivirusePlacement : MonoBehaviour
                     go.GetComponent<PlacementCost>().active = true;
                     Destroy(currentAntivirus);
                     placing = false;
+                    GameManager.i.SetTowerBlockMaterial();
                 }
             }
         }

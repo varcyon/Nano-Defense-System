@@ -16,6 +16,11 @@ TagManager:
   - StartA
   - StartB
   - Start
+  - Subroutine
+  - NanoInjector
+  - NanoBomber
+  - Quarentiner
+  - VirusScanner
   layers:
   - Default
   - TransparentFX
@@ -27,7 +32,7 @@ TagManager:
   - 
   - Viruses
   - PostProcessing
-  - 
+  - TowerUI
   - 
   - 
   - 

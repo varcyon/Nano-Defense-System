@@ -15,8 +15,10 @@ public class SubroutineProjectileController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if(target !=null){
         transform.LookAt(target.transform.position);
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        }
     }
 
     void OnTriggerEnter(Collider other)

@@ -4,17 +4,35 @@ using UnityEngine;
 
 public class PlacementCost : MonoBehaviour
 {
-    public int cost = 30;
+    public int cost;
     public bool active = false;
 
     void Start()
     {
+        switch (gameObject.tag)
+        {
+            case "Subroutine":
+            cost = GameManager.i.subroutineCost;
+            break;
 
-    }
+            case "NanoInjector":
+            cost = GameManager.i.nanoInjectorCost;
+            break;
 
-    // Update is called once per frame
-    void Update()
-    {
+            case "NanoBomber":
+            cost = GameManager.i.nanoBomberCost;
+            break;
 
+            case "Quarentiner":
+            cost = GameManager.i.quarentinerCost;
+            break;
+
+            case "VirusScanner":
+            cost = GameManager.i.virusScannerCost;
+            break;
+
+            default:
+            break;
+        }
     }
 }

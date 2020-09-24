@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2836661952110197976}
   m_Layer: 2
   m_Name: NanoBomber
-  m_TagString: Untagged
+  m_TagString: NanoBomber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

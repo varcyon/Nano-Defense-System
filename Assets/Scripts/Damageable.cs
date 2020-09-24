@@ -18,6 +18,8 @@ public class Damageable : MonoBehaviour
             }
             GameManager.i.nanoPoints++;
             GameManager.i.ActiveViruses.Remove(gameObject);
+            AudioSource.PlayClipAtPoint(AudioManager.i.deRez, this.gameObject.transform.position);
+            GameManager.i.score += health;
             Destroy(gameObject);
         }
     }

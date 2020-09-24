@@ -6,27 +6,42 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject StartPosA;
-    public GameObject StartPosB;
-    public GameObject Finish;
+    [HideInInspector]
+    public int score;
+    [HideInInspector] public GameObject StartPosA;
+    [HideInInspector] public GameObject StartPosB;
+    [HideInInspector] public GameObject Finish;
     public int MainFrameHealth;
-    public List<GameObject> ActiveViruses = new List<GameObject>();
-
+    [HideInInspector] public List<GameObject> ActiveViruses = new List<GameObject>();
+    [HideInInspector] public Material NormalBlock;
+    [HideInInspector] public Material HoverMaterial;
+    [HideInInspector] [SerializeField] GameObject pauseMenu;
     [SerializeField] int MaxMainFrameHealth;
-    [SerializeField] TextMeshProUGUI mainframeHealth;
-    [SerializeField] TextMeshProUGUI nanoPointsDisplay;
-    [SerializeField] Color HoverColor;
+    [HideInInspector] [SerializeField] TextMeshProUGUI mainframeHealth;
+    [HideInInspector] [SerializeField] TextMeshProUGUI nanoPointsDisplay;
+    [HideInInspector] [SerializeField] Color HoverColor;
     public int nanoPoints = 30;
     [SerializeField] float nanoPointsRate = 2f;
 
     RaycastHit hitData;
-    public static GameObject activeBlock;
+    [HideInInspector] public static GameObject activeBlock;
 
     public int virusPoints;
     float waitTimer = 3f;
     float timer;
-    [SerializeField] GameObject sectorCleared;
-    [SerializeField] GameObject sectorCorrupted;
+    [HideInInspector] [SerializeField] GameObject sectorCleared;
+    [HideInInspector] [SerializeField] GameObject sectorCorrupted;
+    public int subroutineCost;
+    public int nanoInjectorCost;
+    public int nanoBomberCost;
+    public int quarentinerCost;
+    public int virusScannerCost;
+
+    [SerializeField] float startViruses = 10f;
+    [HideInInspector] [SerializeField] TextMeshProUGUI startVirusesDisplay;
+    [HideInInspector] [SerializeField] TextMeshProUGUI scoreDisplay;
+    [HideInInspector] public bool virusesStart;
+    bool cleared;
 
     public static GameManager i;
     private void Awake()
@@ -38,7 +53,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        //Time.timeScale = .15f;
+
         MainFrameHealth = MaxMainFrameHealth;
         StartPosA = GameObject.FindGameObjectWithTag("StartA");
         StartPosB = GameObject.FindGameObjectWithTag("StartB");
@@ -53,6 +68,18 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        startViruses -= Time.deltaTime;
+        startVirusesDisplay.text = startViruses.ToString("0.00");
+        if (startViruses <= 0)
+        {
+            startVirusesDisplay.gameObject.SetActive(false);
+            virusesStart = true;
+        }
+        else
+        {
+            startVirusesDisplay.gameObject.SetActive(true);
+            virusesStart = false;
+        }
         mainframeHealth.text = MainFrameHealth.ToString();
         nanoPointsDisplay.text = nanoPoints.ToString();
         /// raycast hit object data
@@ -67,13 +94,17 @@ public class GameManager : MonoBehaviour
                 if (GameManager.activeBlock.GetComponent<NanoBlockController>().buildable)
                 {
                     MeshRenderer r = activeBlock.GetComponent<MeshRenderer>();
-                    r.material.SetColor("_BaseColor", HoverColor);
+                    r.material = HoverMaterial;
                 }
             }
         }
-
+        //////////////////////
         SectorCorrupt();
         SectorClear();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pause();
+        }
     }
 
     void SectorCorrupt()
@@ -91,15 +122,39 @@ public class GameManager : MonoBehaviour
 
     void SectorClear()
     {
-        if (virusPoints <= 1 && ActiveViruses.Count <= 0 && MainFrameHealth > 0)
+        
+        if (virusPoints <= 2 && ActiveViruses.Count <= 0 && MainFrameHealth > 0)
         {
             timer += Time.deltaTime;
-            if (timer > waitTimer)
+            if (timer > waitTimer && cleared == false)
             {
-
+                cleared = true;
                 Time.timeScale = 0;
+                score += MainFrameHealth + nanoPoints;
+                scoreDisplay.text = score.ToString();
                 sectorCleared.SetActive(true);
             }
         }
     }
+
+    public void SetTowerBlockMaterial()
+    {
+        activeBlock.GetComponent<NanoBlockController>().activeBlock = true;
+        activeBlock.GetComponent<MeshRenderer>().material = HoverMaterial;
+    }
+
+    public void pause()
+    {
+        if (pauseMenu.activeSelf)
+        {
+            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
 }

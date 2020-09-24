@@ -247,3 +247,4 @@ MonoBehaviour:
   speed: 10
   parent: {fileID: 0}
   AOE: {fileID: 2453251413496229578}
+  boom: {fileID: 6285759810699280245, guid: 107fef50774c3de4c9b7f177a945daef, type: 3}

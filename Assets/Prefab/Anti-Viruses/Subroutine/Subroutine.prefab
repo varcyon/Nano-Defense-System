@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6716550737850891609}
   m_Layer: 2
   m_Name: Subroutine
-  m_TagString: Untagged
+  m_TagString: Subroutine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   projectile: {fileID: 5758994644634199344, guid: d2d5cadeb1462e64780d58b0ccfdfa03,
     type: 3}
   firePoint: {fileID: 440774895609278572}
-  fireRate: 1
+  fireRate: 0.5
   attackAreaDisplay: {fileID: 2697645229318335878}
   targets: []
 --- !u!114 &8805666875917857483

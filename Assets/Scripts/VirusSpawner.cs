@@ -5,19 +5,24 @@ using UnityEngine;
 public class VirusSpawner : MonoBehaviour
 {
     [SerializeField] GameObject virus;
-    [SerializeField] float spawnRate = 2f;
-    public float spawnTimer;
-    public float timer;
+    [SerializeField] float spawnRate;
+    [SerializeField] float spawnRateMin;
+    [SerializeField] float spawnRateMax;
+   [HideInInspector] public float spawnTimer;
+  [HideInInspector]  public float timer;
     void Start()
     {
+        spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         spawnTimer = spawnRate;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        Spawn();
+        if (GameManager.i.virusesStart)
+        {
+            Spawn();
+        }
     }
 
     void Spawn()

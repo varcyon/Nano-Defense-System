@@ -6,6 +6,7 @@ public class NanoBlockController : MonoBehaviour
 {
    MeshRenderer r;
    public bool buildable = true;
+   public bool activeBlock = false;
     void Start() {
         r = GetComponent<MeshRenderer>();
    }
@@ -16,6 +17,8 @@ public class NanoBlockController : MonoBehaviour
         if(Physics.Raycast(transform.position,Vector3.up, 1f)){
             buildable = false;
         }
-         r.material.SetColor("_BaseColor",Color.white);
+        if(!activeBlock){
+        r. material = GameManager.i.NormalBlock;
+        }
     }
 }

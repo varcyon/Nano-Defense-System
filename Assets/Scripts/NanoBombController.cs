@@ -8,12 +8,11 @@ public class NanoBombController : MonoBehaviour
     [SerializeField] float speed;
     public GameObject parent;
     [SerializeField] GameObject AOE;
+    [SerializeField] GameObject boom;
     bool exploded = false;
 
     private void Start()
     {
-
-
         transform.LookAt(target.transform.position);
     }
     void Update()
@@ -33,7 +32,8 @@ public class NanoBombController : MonoBehaviour
         if (other.GetComponent<Damageable>() != null)
         {
             Debug.Log(other.name + " Hit!");
-            AOE.SetActive(true);
+            Instantiate(boom,transform.position, Quaternion.identity);
+            //AOE.SetActive(true);
             exploded = true;
             Destroy(gameObject, 0.1f);
         }

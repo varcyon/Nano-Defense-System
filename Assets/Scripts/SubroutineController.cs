@@ -9,7 +9,7 @@ public class SubroutineController : MonoBehaviour
     [SerializeField] float fireRate;
     [SerializeField] GameObject attackAreaDisplay;
     float timer;
-    [SerializeField] List<GameObject> targets = new List<GameObject>();
+    public List<GameObject> targets = new List<GameObject>();
     void OnTriggerEnter(Collider other)
     {
         targets.Add(other.gameObject);
